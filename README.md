@@ -25,7 +25,7 @@ Make sure you have the following dependencies installed:
 - matplotlib
 
 ## To Use this.
-1. Clone this code
+1. Clone this repo
 2. run `pip install -r requirements.txt`
 3. Replace "YOUR_API_KEY" with your actual API key obtained from Weatherbit:
 `self.api_key = "YOUR_API_KEY"`
