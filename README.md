@@ -35,3 +35,7 @@ Make sure you have the following dependencies installed:
    `streamlit run skycast.py`
 5. Here you go.
 
+# How Github Copilot help me with this project
+
+GitHub Copilot is an AI-powered tool that has been incredibly helpful to me as a newcomer to the Streamlit framework. It generates code snippets, suggests syntax and methods, assists with error handling, provides documentation support, aids in refactoring, and helps me learn and explore new concepts. Thanks to GitHub Copilot's intelligent suggestions, my productivity has improved, and I've been able to grasp the intricacies of Streamlit more efficiently.
+
