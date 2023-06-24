@@ -33,26 +33,15 @@ class SkyCast:
             self.display_forecast_weather()
 
     def display_today_weather(self):
-        st.sidebar.title("Location Options")
-        location_option = st.sidebar.radio(
-            "Choose Location Option",
-            options=["Use Current Location", "Enter City Name"],
-            key="location_option"
-        )
 
         latitude, longitude = None, None
-
-        if location_option == "Use Current Location":
-            # Get the latitude and longitude using geolocation
-            latitude, longitude = self.geolocation_model.get_current_location()
+        # Manually enter the city name
+        city_name = st.sidebar.text_input("Enter City Name", key="city_name")
+        if st.sidebar.button("Submit"):
+            latitude, longitude = self.geolocation_model.get_location_by_name(city_name)
         else:
-            # Manually enter the city name
-            city_name = st.sidebar.text_input("Enter City Name", key="city_name")
-            if st.sidebar.button("Submit"):
-                latitude, longitude = self.geolocation_model.get_location_by_name(city_name)
-            else:
-                # If the submit button is not clicked, do not proceed further
-                return
+            # If the submit button is not clicked, do not proceed further
+            return
 
 
         st.markdown(f"<h2 style='text-align: center;'>Today's Weather</h2>", unsafe_allow_html=True)
@@ -91,27 +80,16 @@ class SkyCast:
                 st.write("Location not found.")
 
     def display_forecast_weather(self):
-        st.sidebar.title("Location Options")
-        location_option = st.sidebar.radio(
-            "Choose Location Option",
-            options=["Use Current Location", "Enter City Name"],
-            key="location_option"
-        )
-
+        
         latitude, longitude = None, None
+        # Manually enter the city name
+        city_name = st.sidebar.text_input("Enter City Name", key="city_name")
 
-        if location_option == "Use Current Location":
-            # Get the latitude and longitude using geolocation
-            latitude, longitude = self.geolocation_model.get_current_location()
+        if st.sidebar.button("Submit"):
+            latitude, longitude = self.geolocation_model.get_location_by_name(city_name)
         else:
-            # Manually enter the city name
-            city_name = st.sidebar.text_input("Enter City Name", key="city_name")
-
-            if st.sidebar.button("Submit"):
-                latitude, longitude = self.geolocation_model.get_location_by_name(city_name)
-            else:
-                # If the submit button is not clicked, do not proceed further
-                return
+            # If the submit button is not clicked, do not proceed further
+            return
         st.markdown(f"<h2 style='text-align: center;'>Forecast Weather</h2>", unsafe_allow_html=True)
 
         if latitude is not None and longitude is not None:
