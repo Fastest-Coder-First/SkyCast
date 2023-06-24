@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 class SkyCast:
     def __init__(self):
         self.geolocation_model = GeolocationModel()
-        self.api_key = "459edc1649d44461a5a6934acb4d0d97"
+        self.api_key = "YOUR_API_KEY"
         self.base_url = "https://api.weatherbit.io/v2.0/current"
         self.weather_option = "Today's Weather"
 
