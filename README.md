@@ -5,7 +5,7 @@
 SkyCast is a weather forecast application that provides current weather information and a 7-day forecast. It utilizes geolocation to determine the user's current location and retrieves weather data from the [Weatherbit](https://www.weatherbit.io/) API.
 
 ## Home Page
-![image](https://github.com/Fastest-Coder-First/SkyCast/assets/54232149/82cbf416-918f-477d-a31d-7112568907bf)
+![image](https://github.com/Fastest-Coder-First/SkyCast/assets/54232149/86863e10-27e5-4845-a669-6bc70caedc74)
 
 ## Features
 - Today's Weather: Displays the current weather information for the user's location.
