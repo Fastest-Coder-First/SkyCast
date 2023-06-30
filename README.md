@@ -1,8 +1,8 @@
 # SkyCast 🌤️
 
-> You can use my tool by clicking this : https://skycast-ppvtchkbl4o.streamlit.app/
+> You can use my tool by clicking this: https://skycast-ppvtchkbl4o.streamlit.app/
 
-SkyCast is a weather forecast application that provides current weather information and a 7-day forecast. It utilizes geolocation to determine the user's current location and retrieves weather data from the [Weatherbit](https://www.weatherbit.io/) API.
+SkyCast is a weather forecast application that provides current weather information and input day forecast. It utilizes geolocation to determine the user's current location and retrieves weather data from the [Weatherbit](https://www.weatherbit.io/) API.
 
 ## Home Page
 ![image](https://github.com/Fastest-Coder-First/SkyCast/assets/54232149/86863e10-27e5-4845-a669-6bc70caedc74)
